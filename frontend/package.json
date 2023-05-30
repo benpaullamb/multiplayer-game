@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./build && node esbuild.mjs",
+    "dev": "esbuild ./src/index.js --bundle --outfile=./build/out.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.17.19"
+  },
+  "dependencies": {
+    "ws": "^8.13.0"
+  }
+}
